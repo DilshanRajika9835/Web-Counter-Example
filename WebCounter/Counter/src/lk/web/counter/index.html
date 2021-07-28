@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Counter Up Demo</title>
+    <meta name="description" content="Counter Up - jQuery Plugin Demo">
+    <meta name="author" content="Benjamin Intal">
+    <link rel="author" href="https://plus.google.com/113101541449927918834"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body style="background: black">
+
+<div class="container counter-section ">
+    <div class="row text-center">
+        <div class="col-md-3 counter-box">
+            <div class="icon-box">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div style="display: flex;flex-direction: row;justify-content: center;text-align: center">
+                <p class="counter">230</p><span style="font-size: 40px;font-weight: bold;color: aqua">+</span>
+            </div>
+            <p style="text-align: center">Total Customers</p>
+        </div>
+        <div class="col-md-3 counter-box">
+            <div class="icon-box">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="counter">230</p>
+            <p>Total Customers</p>
+        </div>
+        <div class="col-md-3 counter-box">
+            <div class="icon-box">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="counter">230</p>
+            <p>Total Customers</p>
+        </div>
+        <div class="col-md-3 counter-box">
+            <div class="icon-box">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="counter">230</p>
+            <p>Total Customers</p>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 20,
+            time: 2000
+        });
+    });
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="./script/jquery.counterup.min.js"></script>
+</body>
+</html>
